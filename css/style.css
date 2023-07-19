@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Outfit:wght@300&family=Sanchez&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bungee Shade", cursive;
+  font-family: "Outfit", sans-serif;
+  font-family: "Sanchez", serif;
+}/*# sourceMappingURL=style.css.map */
