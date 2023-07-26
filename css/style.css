@@ -6,4 +6,50 @@ body {
   font-family: "Bungee Shade", cursive;
   font-family: "Outfit", sans-serif;
   font-family: "Sanchez", serif;
+}
+
+header {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-up {
+  background-color: rgb(214, 121, 223);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-up-logo {
+  background-color: rgb(221, 199, 170);
+  margin: 1em;
+}
+.header-up-logo img {
+  height: 6em;
+  width: 11em;
+}
+.header-up-search-bar {
+  margin: 1em;
+  display: flex;
+  align-items: center;
+}
+.header-up-search-bar #text {
+  margin: 1em;
+  width: 50em;
+  padding: 0.8em;
+  border-radius: 1em;
+  border-style: none;
+}
+.header-up-actions-list {
+  list-style: none;
+  background-color: cornsilk;
+  display: flex;
+  justify-content: space-between;
+}
+.header-up-actions-list li {
+  margin-right: 2em;
+}
+
+.header-nav {
+  background-color: burlywood;
 }/*# sourceMappingURL=style.css.map */
