@@ -1,27 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Outfit:wght@300&family=Sanchez&display=swap");
+:root {
+  --text-color-light:#CAD0D0;
+  --text-color-dark: #ACB5B2;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bungee Shade", cursive;
   font-family: "Outfit", sans-serif;
-  font-family: "Sanchez", serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
 }
 
 .header-up {
-  background-color: rgb(214, 121, 223);
+  background-color: rgb(26, 25, 26);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .header-up-logo {
-  background-color: rgb(221, 199, 170);
   margin: 1em;
 }
 .header-up-logo img {
@@ -35,18 +40,25 @@ header {
 }
 .header-up-search-bar #text {
   margin: 1em;
-  width: 50em;
-  padding: 0.8em;
+  width: 30em;
+  padding: 0.6em;
   border-radius: 1em;
   border-style: none;
 }
+.header-up-search-bar button {
+  background-color: transparent;
+  border-style: none;
+  font-size: 1.3em;
+  cursor: pointer;
+  color: var(--text-color-light);
+}
 .header-up-actions-list {
   list-style: none;
-  background-color: cornsilk;
   display: flex;
   justify-content: space-between;
 }
-.header-up-actions-list li {
+.header-up-actions-list li a {
+  color: var(--text-color-light);
   margin-right: 2em;
 }
 
