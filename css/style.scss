@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Outfit:wght@300&family=Sanchez&display=swap');
 
 
-:root{
-    --text-color-light:#CAD0D0;
+:root {
+    --background-color-header: #111A19;
+    --background-color-nav: #3C4743;
+    --text-color-light: #EDF3F1;
     --text-color-dark: #ACB5B2;
 
 }
@@ -20,13 +22,19 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 header {
     display: flex;
     flex-direction: column;
+    padding: 0 9em 0 9em;
+    background-color: var(--background-color-header);
 }
 
 .header-up {
-    background-color: rgb(26 25 26);
+    background-color: var(--background-color-header);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -60,28 +68,43 @@ header {
         border-style: none;
         font-size: 1.3em;
         cursor: pointer;
-        color: var(--text-color-light);
+        color: var(--text-color-dark);
     }
 
     &-actions-list {
-        list-style: none;
         display: flex;
         justify-content: space-between;
 
-        li a{
-            color: var(--text-color-light);
+        li a {
+            color: var(--text-color-dark);
             margin-right: 2em;
+        }
+
+        li a:hover{
+            color: var(--text-color-light);
         }
     }
 
 }
 
-
-
-
-
-
-
 .header-nav {
-    background-color: burlywood;
+    background-color: var(--background-color-nav);
+    border-radius: 0.6em;
+
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+
+        & li {
+            padding: 0 2.5em 0 2.5em;
+            & a {
+                color: var(--text-color-dark);
+            }
+
+            & a:hover{
+                color: var(--text-color-light);
+            }
+        }
+
+    }
 }
