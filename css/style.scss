@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Outfit:wght@300&family=Sanchez&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
 
 :root {
     --background-color-header: #111A19;
@@ -15,7 +15,6 @@ body {
     box-sizing: border-box;
     // font-family: 'Bungee Shade', cursive;
     font-family: 'Outfit', sans-serif;
-    // font-family: 'Sanchez', serif;
 }
 
 a {
@@ -33,6 +32,7 @@ header {
     background-color: var(--background-color-header);
 }
 
+
 .header-up {
     background-color: var(--background-color-header);
     display: flex;
@@ -42,7 +42,7 @@ header {
     &-logo {
         margin: 1em;
 
-        & img {
+        img {
             height: 6em;
             width: 11em;
         }
@@ -53,7 +53,7 @@ header {
         display: flex;
         align-items: center;
 
-        & #text {
+        #text {
             margin: 1em;
             width: 30em;
             padding: 0.6em;
@@ -61,14 +61,15 @@ header {
             border-style: none;
         }
 
-    }
+        button {
+            background-color: transparent;
+            border-style: none;
+            font-size: 1.3em;
+            cursor: pointer;
+            color: var(--text-color-dark);
+        }
 
-    &-search-bar button {
-        background-color: transparent;
-        border-style: none;
-        font-size: 1.3em;
-        cursor: pointer;
-        color: var(--text-color-dark);
+
     }
 
     &-actions-list {
@@ -80,7 +81,7 @@ header {
             margin-right: 2em;
         }
 
-        li a:hover{
+        li a:hover {
             color: var(--text-color-light);
         }
     }
@@ -95,16 +96,58 @@ header {
         display: flex;
         justify-content: space-between;
 
-        & li {
+        li {
             padding: 0 2.5em 0 2.5em;
-            & a {
+
+            a {
                 color: var(--text-color-dark);
             }
 
-            & a:hover{
+            a:hover {
                 color: var(--text-color-light);
             }
         }
 
     }
+}
+
+.container-viewport {
+    background-color:var(--background-color-header);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+
+    &-box {
+        padding: 4em 9em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+            font-family: 'Bevan', cursive;
+            font-size: 5em;
+            margin: 0;
+            color: #FA8E21;
+        }
+
+        h2 {
+            font-family: 'Bevan', cursive;
+            font-size: 2.5em;
+            margin: 0;
+            color: var(--text-color-light);
+        }
+
+        p{
+            color: var(--text-color-dark);
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        img {
+            padding: 1em;
+        }
+
+    }
+
 }
